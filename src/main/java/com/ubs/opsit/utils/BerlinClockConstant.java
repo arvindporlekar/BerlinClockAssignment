@@ -1,5 +1,10 @@
 package com.ubs.opsit.utils;
 
+/**
+ * constants for Berlin clock
+ * @author OWNER
+ *
+ */
 public interface BerlinClockConstant {
 
 	public static final String TIME_SEPERATOR = ":";

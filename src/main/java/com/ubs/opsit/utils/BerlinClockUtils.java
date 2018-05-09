@@ -4,12 +4,18 @@ import com.ubs.opsit.model.BerlinClock;
 import com.ubs.opsit.model.Color;
 import com.ubs.opsit.model.Time;
 
+/**
+ * Utility for berlin clock.
+ * @author OWNER
+ *
+ */
 public abstract class BerlinClockUtils {
+	private BerlinClockUtils() {}
 
 	/**
-	 * 
+	 * get the Time object depending on input time string.
 	 * @param timeString
-	 * @return
+	 * @return Time
 	 */
 	public static Time getTime(String timeString) {
 		Time24HoursValidator time24HoursValidator = new Time24HoursValidator();
@@ -25,9 +31,9 @@ public abstract class BerlinClockUtils {
 	}
 
 	/**
+	 * turn on clock seconds lamp.
 	 * 
 	 * @param berlinClock
-	 * @param integer
 	 */
 	public static void turnOnSecondsLamp(BerlinClock berlinClock) {
 		if (berlinClock.getBerlinTime().getSeconds() % 2 == 0) {
@@ -36,9 +42,9 @@ public abstract class BerlinClockUtils {
 	}
 
 	/**
+	 * Turn on five hour and one hour lamps of clock
 	 * 
 	 * @param berlinClock
-	 * @param integer
 	 */
 	public static void turnOnHoursLamp(BerlinClock berlinClock) {
 		Integer fiveHoursLampCount = berlinClock.getBerlinTime().getHours() / 5;
@@ -53,9 +59,9 @@ public abstract class BerlinClockUtils {
 	}
 
 	/**
+	 * Turn on five minutes and one minutes lamps of clock
 	 * 
 	 * @param berlinClock
-	 * @param integer
 	 */
 	public static void turnOnMinutesLamp(BerlinClock berlinClock) {
 		Integer fiveMinutesLampCount = berlinClock.getBerlinTime().getMinutes() / 5;
@@ -68,7 +74,6 @@ public abstract class BerlinClockUtils {
 			} else {
 				berlinClock.getFiveMinutesRow().getLamps().get(i).setLampColor(Color.YELLOW);
 			}
-
 		}
 		for (int i = 0; i < oneMinutesLampCount; i++) {
 			berlinClock.getOneMinuteRow().getLamps().get(i).setLampColor(Color.YELLOW);

@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * 
+ * test case for testing different scenerios for clock output
  * 
  */
 public class BerlinClockTimeTest {

@@ -3,6 +3,12 @@ package com.ubs.opsit.model;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * this class represent Row for Berlin clock.
+ * Each row is populated with number of lamp depend on lamp count with default lamp color.
+ * @author OWNER
+ *
+ */
 public class Row {
 	private final List<Lamp> lamps;
 
