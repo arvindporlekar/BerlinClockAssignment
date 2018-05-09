@@ -2,6 +2,11 @@ package com.ubs.opsit.model;
 
 import com.ubs.opsit.utils.BerlinClockConstant;
 
+/**
+ * this class represent berlin Clock model.
+ * Each clock have rows and lamps with time format.
+ * @author OWNER
+ */
 public class BerlinClock {
 	private Lamp secondsLamp;
 	private Row fiveHoursRow;
@@ -15,6 +20,9 @@ public class BerlinClock {
 		initializeBerlinClock();
 	}
 
+	/**
+	 * initialize clock with default rows and lamps.
+	 */
 	private void initializeBerlinClock() {
 		this.secondsLamp = new Lamp();
 		this.fiveHoursRow = new Row(BerlinClockConstant.FIVE_HOUR_LAMP_COUNT);

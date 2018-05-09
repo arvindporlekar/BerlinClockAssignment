@@ -1,5 +1,10 @@
 package com.ubs.opsit.model;
 
+/**
+ * represents Color code for lamp.
+ * @author OWNER
+ *
+ */
 public enum Color {
 	DEFAULT("O"), RED("R"), YELLOW("Y");
 

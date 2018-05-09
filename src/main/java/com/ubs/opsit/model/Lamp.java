@@ -1,5 +1,10 @@
 package com.ubs.opsit.model;
 
+/**
+ * represent Lamp for each clock row. lamp is having default color code "O"
+ * @author OWNER
+ *
+ */
 public class Lamp {
 
 	private Color lampColor;

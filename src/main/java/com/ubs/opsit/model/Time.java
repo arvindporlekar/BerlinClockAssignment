@@ -2,6 +2,10 @@ package com.ubs.opsit.model;
 
 import com.ubs.opsit.utils.BerlinClockConstant;
 
+/**
+ * this class represents Time format in HH:MM:SS
+ * @author OWNER
+ */
 public class Time {
 
 	private final Integer hours;
@@ -35,8 +39,8 @@ public class Time {
 		return seconds;
 	}
 
-	/*
-	 * (non-Javadoc)
+	/**
+	 * Represent time in hh:mm:ss format
 	 * 
 	 * @see java.lang.Object#toString()
 	 */
